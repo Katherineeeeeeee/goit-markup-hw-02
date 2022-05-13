@@ -3,14 +3,22 @@
 #212121 - заголовки, текст на кнопках, текст в хедере
 #2196F3 - акцент
 #FFFFFF - герой 
-#2196F3 - Web, #000000 - Studio
 #2F303A - фон 1(там где герой)
-#F5F4FA - фон наша комаанда*/
+#F5F4FA - фон наша комаанда / цвет фона кнопок в портфолио
+*/
+
+:root{
+    --primary-text-colour: #757575;
+    --title-text-colour: #212121;
+    --accent-colour: #2196F3;
+    --primary-white-colour: #FFFFFF;
+    --secondary-bg-colour: #F5F4FA;/* кнопки в портфолио и фон наша команда*/
+}
 
 
 body{
-   background-color: #fff;
-   color: #757575;
+    color: var(--primary-text-colour);
+    background-color: var(--primary-white-colour)
 }
 
 /* Для сброса */
@@ -21,14 +29,53 @@ body{
 /*Контакты + навигация(студия, портфолио, контакты)*/
 .link:hover,
 .link:focus{
-    color: #2196F3;
+    color: var(--accent-colour);
 }
 
-/* Цвет лого*/
+/* Цвет лого */
 .logo{
     color: #000000;
 }
 
 .logo-web{
-    color: #2196F3;
+    color: var(--accent-colour);
 }
+
+/* Навигация сайта*/
+.site-nav a{
+    color: var(--title-text-colour);
+}
+
+.site-nav .link.current{
+    color: var(--accent-colour);
+}
+
+/* Герой */
+.hero-title{
+    color: #212121; /* Белый цвет героя - потом поменять */
+}
+
+/* Название секций */
+.section-title{
+    color: var(--title-text-colour);
+}
+
+/* Кнопки */
+.button{
+    color: var(--title-text-colour);
+    background-color: var(--secondary-bg-colour);
+}
+
+/* Смена фона и текста кнопок в портфолио*/
+.button.link:hover,
+.button.link:focus{
+    color: var(--primary-white-colour);
+    background-color: var(--accent-colour);
+}
+
+/* Кнопка в файле html*/
+.button.order {
+    color: var(--primary-white-colour);
+    background-color: var(--accent-colour);
+}
+
