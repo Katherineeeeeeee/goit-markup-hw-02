@@ -18,8 +18,10 @@
 
 body{
     color: var(--primary-text-colour);
-    background-color: var(--primary-white-colour)
-}
+    background-color: var(--primary-white-colour);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    }
 
 /* Для сброса */
 .list{
@@ -39,6 +41,10 @@ body{
 /* Цвет лого */
 .logo{
     color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .logo-web{
@@ -48,6 +54,9 @@ body{
 /* Навигация сайта*/
 .site-nav a{
     color: var(--title-text-colour);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 .site-nav .link.current{
@@ -56,30 +65,96 @@ body{
 
 /* Герой */
 .hero-title{
-    color: #212121; /* Белый цвет героя - потом поменять */
+    color: var(--title-text-colour); /* Белый цвет героя - потом поменять */
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;  
 }
 
 /* Название секций */
 .section-title{
     color: var(--title-text-colour);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.section-title-three {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-colour);
+}
+
+.section-title-three-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.section-title-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--title-text-colour);
+}
+
+.section-title-member-work {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+/*Секции в портфолио*/
+.section-title-portfolio{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--title-text-colour);
+}
+
+.section-title-portfolio-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 /* Кнопки */
 .button{
     color: var(--title-text-colour);
     background-color: var(--secondary-bg-colour);
+    cursor: pointer;
+    font-family: inherit;
 }
 
 /* Смена фона и текста кнопок в портфолио*/
-.button.link:hover,
-.button.link:focus{
-    color: var(--primary-white-colour);
-    background-color: var(--accent-colour);
+
+.button.link.style{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
 }
+
+.button.link:hover,
+.button.link:focus,{
+    color:var(--primary-white-colour);
+    background-color:var(--accent-colour);
+}
+
 
 /* Кнопка в файле html*/
 .button.order {
     color: var(--primary-white-colour);
     background-color: var(--accent-colour);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;   
 }
-
