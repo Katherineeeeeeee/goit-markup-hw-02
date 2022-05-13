@@ -27,6 +27,10 @@ body{
 }
 
 /*Контакты + навигация(студия, портфолио, контакты)*/
+
+.link{
+    color: var(--primary-text-colour);
+}
 .link:hover,
 .link:focus{
     color: var(--accent-colour);
