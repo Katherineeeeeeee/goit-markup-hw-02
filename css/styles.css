@@ -23,19 +23,58 @@ body{
     letter-spacing: 0.03em;
     }
 
+/* Название секций */
+.section-title {
+    color: var(--title-text-colour);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.section-title-features {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-colour);
+}
+
+.section-title-features-text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--title-text-colour);
+}
+
+.team-position{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+/*Секции в портфолио*/
+.project-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-colour);
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
 /* Для сброса */
 .list{
     list-style: none;
-}
-
-/*Контакты + навигация(студия, портфолио, контакты)*/
-
-.link{
-    color: var(--primary-text-colour);
-}
-.link:hover,
-.link:focus{
-    color: var(--accent-colour);
 }
 
 /* Цвет лого */
@@ -45,85 +84,51 @@ body{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
 }
 
 .logo-web{
     color: var(--accent-colour);
+    text-decoration: none;
 }
 
 /* Навигация сайта*/
-.site-nav a{
+.site-nav a,
+.contact-link,
+.nav-link{
     color: var(--title-text-colour);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    text-decoration: none;
+}
+
+.contact-link{
+    color: var(--primary-text-colour);
+    text-decoration: none;
 }
 
 .site-nav .link.current{
     color: var(--accent-colour);
 }
+/*Контакты + навигация(студия, портфолио, контакты)*/
+.link:hover,
+.link:focus,
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-colour);
+}
 
 /* Герой */
 .hero-title{
-    color: var(--title-text-colour); /* Белый цвет героя - потом поменять */
-    font-weight: 400;
+    color: var(--primary-white-colour); 
+    background: #2F303A;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;  
-}
-
-/* Название секций */
-.section-title{
-    color: var(--title-text-colour);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-}
-
-.section-title-three {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--title-text-colour);
-}
-
-.section-title-three-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.section-title-member {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    color: var(--title-text-colour);
-}
-
-.section-title-member-work {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-}
-
-/*Секции в портфолио*/
-.section-title-portfolio{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    color: var(--title-text-colour);
-}
-
-.section-title-portfolio-text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.8;
 }
 
 /* Кнопки */
@@ -136,19 +141,25 @@ body{
 
 /* Смена фона и текста кнопок в портфолио*/
 
-.button.link.style{
+.portfolio.btn{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    font-family: inherit;
 }
 
-.button.link:hover,
-.button.link:focus,{
+.btn.link:hover,
+.btn.link:focus{
     color:var(--primary-white-colour);
-    background-color:var(--accent-colour);
+    background-color: var(--accent-colour);
 }
 
+
+.portfolio.btn:active{
+    color:var(--primary-white-colour);
+    background-color: var(--accent-colour);
+}
 
 /* Кнопка в файле html*/
 .button.order {
@@ -157,4 +168,13 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;   
+}
+
+.footer{
+    background-color: #2F303A;
+}
+
+.footer-address{
+    font-weight: 400;
+    font-style: normal;
 }
